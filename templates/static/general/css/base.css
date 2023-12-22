@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('fundo-oficina.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 60% 30%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #656565;
+  padding: 0.6rem 2rem;
+  color: #fff;
+}
+
+.logo-details .logo_name {
+  font-size: 1.6rem; 
+  font-weight: 600; 
+  margin-right: 1rem;
+}
+
+.logo-details i {
+  font-size: 2rem; 
+  cursor: pointer;
+}
+
+/* Navegação */
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+  margin-right: 5rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+}
+
+.nav-list li a i {
+  font-size: 1rem;
+}
+
+.nav-list li a .links_name {
+  font-size: 1rem;
+  transition: all 200ms;
+}
+
+.nav-list li a .links_name:hover {
+  color: rgb(244, 180, 61);
+}
+

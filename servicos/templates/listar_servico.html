@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'clientes/css/clientes.css' %}">
+    <link rel="stylesheet" href="{% static 'servicos/css/listar_servico.css' %}">
+{% endblock %}
+
+
+{% block 'dashboard' %}
+    <br>
+    <div class="container-fluid distanciamento">
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Status</th>
+            <th scope="col">Preço total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for servico in servicos %}
+                <tr>
+                    <th><a href="{% url 'servico' servico.id %}">{{servico.id}}</a></th>
+                    <td>{{servico.titulo}}</td>
+                    <td>{{servico.cliente}}</td>
+                    <td>
+                    {% if servico.finalizado %}
+                        <span style="color: rgb(198, 255, 198);" >Finalizado</span>
+                    {% else %}
+                        <span style="color: rgb(255, 165, 165);" >Em manutenção</span>
+                    {% endif %}
+                    
+                    </td>
+                    <td>R$ {{servico.preco_total}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+{% endblock %}

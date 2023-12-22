@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'clientes/css/clientes.css' %}">
+    <link rel="stylesheet" href="{% static 'servicos/css/listar_servico.css' %}">
+{% endblock %}
+
+
+{% block 'dashboard' %}
+    <br>
+    <div class="container">
+        <div id="div-servico-titulo">
+            <h3 id="servico-titulo">{{servico.titulo}}</h3>
+        </div>        
+        <p class="detalhes-servico"><span class="info-servicos">Cliente:</span> {{ servico.cliente }}</p>
+        <p class="detalhes-servico"><span class="info-servicos">Equipe:</span> {{ servico.equipe }}</p>
+        {% for categoria in categorias %}
+            <p class="detalhes-servico"><span class="info-servicos">Categoria:</span> {{ categoria.titulo }}</p>
+        {% endfor %}
+        <p class="detalhes-servico"><span class="info-servicos">Data de envio:</span> {{ servico.data_inicio }}</p>
+        <p class="detalhes-servico"><span class="info-servicos">Data de entrega:</span> {{ servico.data_entrega }}</p>
+        <p class="detalhes-servico"><span class="info-servicos">Estado de finalização:</span> {{ servico.finalizado }}</p>
+        <p class="detalhes-servico"><span class="info-servicos">Protocolo:</span> {{ servico.protocolo }}</p>
+        <p class="detalhes-servico"><span class="info-servicos">Preço total:</span> {{ servico.preco_total }}</p>
+        <br>
+        
+    </div>
+
+
+
+{% endblock %}
+
+
+{% block 'body' %}
+{% endblock %}

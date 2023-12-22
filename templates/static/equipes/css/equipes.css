@@ -1,0 +1,174 @@
+p {
+    margin-top: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+input, select {
+    box-shadow: rgb(71, 71, 71) 0.2rem 0.2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60% 30%;
+    scrollbar-width: none; 
+  }
+
+.col-md {
+    padding: 0.3rem !important;
+}
+
+.container {
+    width: 33%;
+    padding: 2rem;
+    background-color: #656565;
+    color: white;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: rgb(69, 69, 69) 0.5rem 0.5rem;
+}
+
+.card-dashboard {
+    background-color: #e77e32;
+    box-shadow: #59351c 0.25rem 0.25rem;
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.card-dashboard:hover {
+    background-color: #c06e34; 
+    border-color: #c06e34; 
+}
+
+.text-card {
+    font-size: 1.2rem;
+}
+
+.btn-add-mecanicos {
+    background-color: #c4aa18; 
+    box-shadow: #766710 0.25rem 0.25rem;
+    padding: 0.5rem;
+    font-weight: medium;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: all 200ms;
+    color: white;
+}
+
+.btn-add-mecanicos:hover {
+    background-color: #ae9717; 
+}
+
+.btn-principal {
+    color: white;
+    border: none;
+    background-color: #3ba64a; 
+    box-shadow: #25572c 0.25rem 0.25rem;
+    padding: 0.5rem 1rem; 
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: all 200ms;
+}
+
+.btn-principal:hover {
+    background-color: #338f40; 
+}
+
+#btn-add-mecanico {
+    display: none;
+    margin-left: 29%;
+}
+
+#btn-att-cliente {
+    margin-left: 29%;
+}
+
+#btns-mecanico {
+    margin-top: 3vh;
+    margin-left: 4rem;
+}
+
+#btn-enviar-mecanico {
+    margin-top: -1.1vh;
+}
+
+div a.btn-principal {
+    padding: 0.6rem 1.1rem;
+    background-color: rgb(180, 57, 57);
+    box-shadow: rgb(110, 38, 38) 0.25rem 0.25rem;
+    margin-right: 2.5rem;
+}
+
+div a.btn-principal:hover {
+    background-color: rgb(157, 50, 50);
+    color: white;
+    text-decoration: none;
+}
+
+#att_cliente {
+    display: none;
+}
+
+#form-att-cliente {
+    display: none;
+}
+
+#id_servicos_adicionais {
+    margin-bottom: 1rem;
+}
+
+div#div-servico-titulo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+h3#servico-titulo {
+    margin-bottom: 2.5rem;
+}
+
+p.detalhes-servico{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+span.info-servicos {
+    font-weight: 600;
+    color: #e8cb25;
+}
+
+button#btn-servico-adicional {
+    padding: 0.7rem 1.4rem;
+    margin-left: 28%;
+}
+
+.divCentro {
+    text-align: center;
+}
+
+.divCentro h2{
+    font-weight: bold;
+}
+
+.btn-principal {
+    position: relative;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'equipes/css/equipes.css' %}">
+{% endblock %}
+
+{% block 'dashboard' %}
+
+    <br>
+    <div class="divCentro">
+        <h2>Cadastrar equipe e mecânicos</h2>
+    </div>
+    <div class="container">
+
+            <div id="adicionar-equipe" class="adicionar-equipe">
+                <form action="{% url 'equipes' %}" method="POST">{% csrf_token %}
+                    <p>Nome:</p>
+                    <input type="text" class="form-control" placeholder="Nome" name="nome" value="{{nome}}">
+                    <br><br>
+                    <div class="add-mecanicos">
+                        
+                    <div class="divCentro">
+                        <span class="btn-add-mecanicos" onclick="add_mecanico()">Adicionar mecânico</span>
+                    </div>
+                        <br>
+                        <div id="form-mecanico">
+                            {% for mecanico, email, cpf in mecanicos %}
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <input type='text' placeholder='Nome' class='form-control' name='mecanico' value="{{mecanico}}">
+                                        </div>
+
+                                        <div class="col-md">
+                                            <input type='text' placeholder='Email' class='form-control' name='Email' value="{{email}}">
+                                        </div>
+
+                                        <div class="col-md">
+                                            <input type='number' placeholder='CPF' class='form-control' name='cpf' value="{{cpf}}">
+                                        </div>
+
+                                    </div>
+                            {% endfor%}
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <input type="submit" value="Cadastrar" class="btn-principal">
+
+                </form>
+        
+            </div>
+
+    </div>
+    <script src="{% static 'equipes/js/equipes.js' %}"></script>
+{% endblock%}
