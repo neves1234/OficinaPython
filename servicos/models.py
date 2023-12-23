@@ -23,6 +23,8 @@ class Servico(models.Model):
     finalizado = models.BooleanField(default=False)
     protocolo = models.CharField(max_length=52, null=True, blank=True)
 
+    
+
     def __str__(self) -> str:
         return self.titulo
 

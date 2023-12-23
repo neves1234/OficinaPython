@@ -4,6 +4,7 @@
 {% block 'head' %}
     <link rel="stylesheet" href="{% static 'clientes/css/clientes.css' %}">
     <link rel="stylesheet" href="{% static 'servicos/css/listar_servico.css' %}">
+    <link rel="stylesheet" href="{% static 'servicos/js/servico.js'%}">
 {% endblock %}
 
 
@@ -31,10 +32,14 @@
                         <span style="color: rgb(198, 255, 198);" >Finalizado</span>
                     {% else %}
                         <span style="color: rgb(255, 165, 165);" >Em manutenção</span>
+                        
                     {% endif %}
-                    
+                   
                     </td>
                     <td>R$ {{servico.preco_total}}</td>
+                    <td>
+                        <button type="button" class="btn btn-success finalizar-servico" data-servico-id="{{ servico.id }}">Finalizar</button>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>

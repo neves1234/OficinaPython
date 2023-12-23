@@ -3,6 +3,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOGIN_URL = '/clientes/'
 
 SECRET_KEY = 'django-insecure-^wc()dv)eo!37=qfk9!0^ec3j+2-4@3pv#k2$6&qb^@8lx4c))'
 
