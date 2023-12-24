@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('fundo-preto.png');
+  background-image: url('./fundo-preto.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #656565;
+  background-color: #363636;
   padding: 0.6rem 2rem;
   color: #fff;
 }

@@ -15,7 +15,7 @@
 
             <div id="adicionar-equipe" class="adicionar-equipe">
                 <form action="{% url 'equipes' %}" method="POST">{% csrf_token %}
-                    <p>Nome:</p>
+                    <p>Nome da equipe:</p>
                     <input type="text" class="form-control" placeholder="Nome" name="nome" value="{{nome}}">
                     <br><br>
                     <div class="add-mecanicos">
