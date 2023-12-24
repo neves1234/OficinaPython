@@ -7,6 +7,7 @@ from io import BytesIO
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
+
     
 
 @login_required(login_url="/usuarios/login/")

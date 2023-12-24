@@ -3,7 +3,6 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-LOGIN_URL = '/clientes/'
 
 SECRET_KEY = 'django-insecure-^wc()dv)eo!37=qfk9!0^ec3j+2-4@3pv#k2$6&qb^@8lx4c))'
 
@@ -11,6 +10,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSFR_TRUSTED_ORIGINS=['https://*.onrender.com','https://*.127.0.0.1']
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
 
 
 INSTALLED_APPS = [
@@ -116,4 +117,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
