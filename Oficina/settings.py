@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-^wc()dv)eo!37=qfk9!0^ec3j+2-4@3pv#k2$6&qb^@8lx4c))
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['oficina-mecanica-ub1m.onrender.com']
+ALLOWED_HOSTS = ['oficina-mecanica-2a5y.onrender.com']
 CSFR_TRUSTED_ORIGINS=['https://*.onrender.com','https://*.127.0.0.1']
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
